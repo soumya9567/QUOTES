@@ -8,22 +8,27 @@
     <title>QUOTES</title>
 </head>
 <body>
-    <div class="w-90 h-90 ... border border-gray-200 bg-blue-700 rounded-md ...shadow-2xl ..." id="header">
-      
-        <div class="w-80 h-80  border border-gray-200 bg-white rounded-md " id="sub">
-           
-            <h1 class="italic  text-2xl text-center mt-6">RANDOM QUOTE GENERATOR</h1>
+    <div class="w-90 h-90 border border-gray-200 bg-blue-700 rounded-md shadow-2xl" id="header">
+        <div class="w-80 h-80 border border-gray-200 bg-black rounded-lg" id="sub">
+            <h1 class="text-2xl text-center mt-6 ">RANDOM QUOTE GENERATOR</h1>
 
-            <P >“You've gotta dance like there's nobody watching,
-                 <br> Love like you'll never be hurt,
-               <br> Sing like there's nobody listening,
-                <br>And live like it's heaven on earth.”
-                ― William W. Purkey</P>
-         
+            <!-- Corrected <p> element with id="p" -->
+            <p class="text-center mt-1.5 text-xl" id="p">
+                “You've gotta dance like there's nobody watching,
+                <br> Love like you'll never be hurt,
+                <br> Sing like there's nobody listening,
+                <br> And live like it's heaven on earth.”
+                <br> ― William W. Purkey
+            </p>
+
+            <!-- Corrected onclick handler to properly call the onClick function -->
+            <button class="custom-btn btn-12" onclick="onClick()">
+                <span>Quotes!</span><span>Generate</span>
+            </button>
         </div>
-
-      
-
     </div>
+
+    <!-- Include the script.js file -->
+    <script src="script.js"></script>
 </body>
 </html>
